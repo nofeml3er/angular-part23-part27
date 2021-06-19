@@ -14,20 +14,20 @@ export class AppComponent implements OnInit{
   productList: ProductListComponent; //ViewChild
   
   ngOnInit() : void {
-    this.productList.products = [
-      {
-        name: "samsung",
-        price: 455
-      },
-      {
-        name: "huawei",
-        price: 564
-      },
-      {
-        name: "vivo",
-        price: 523
-      }
-    ]; //ViewChild
+    // this.productList.products = [
+    //   {
+    //     name: "samsung",
+    //     price: 455
+    //   },
+    //   {
+    //     name: "huawei",
+    //     price: 564
+    //   },
+    //   {
+    //     name: "vivo",
+    //     price: 523
+    //   }
+    // ]; //ViewChild
     this.productList.products = this.backendService.getProducts();
   }
   constructor(private backendService: BackendService){
