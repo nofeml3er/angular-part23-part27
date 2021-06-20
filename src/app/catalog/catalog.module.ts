@@ -11,7 +11,7 @@ import { ProductItemComponent } from './product-item/product-item.component';
     ProductItemComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
   ],
   exports: [
     ProductListComponent

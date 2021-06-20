@@ -11,9 +11,9 @@ import { ProductListComponent } from './catalog/product-list/product-list.compon
 export class AppComponent implements OnInit{
   title = 'angular-part23-part27';
 
-  @ViewChild('productList', {static : true}) //ViewChild
-  // productList: ProductListComponent; //ViewChild lab1
-  productList: ProductListComponent; //ViewChild lab2
+  // @ViewChild('productList', {static : true}) //ViewChild
+  // // productList: ProductListComponent; //ViewChild lab1
+  // productList: ProductListComponent; //ViewChild lab2
   
   ngOnInit() : void {
     // this.productList.products = [
@@ -30,10 +30,11 @@ export class AppComponent implements OnInit{
     //     price: 523
     //   }
     // ]; //ViewChild
-    this.productList.products = this.backendService.getProducts();
+    // this.productList.products = this.backendService.getProducts();
   }
-  constructor(private backendService: BackendService){
-
-  }
+  // constructor(private backendService: BackendService){
+    
+  // }
+  constructor(){ }
   
 }
