@@ -1,0 +1,16 @@
+.box {
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    width: fit-content;
+    float: left;
+    text-align: center;
+    background-color: lightblue;
+    color: darkblue;
+    transition: 0.3ms;
+}
+
+.selected {
+    background-color: lightseagreen;
+    color:aliceblue;
+}

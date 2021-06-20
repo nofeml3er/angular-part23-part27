@@ -1,0 +1,12 @@
+<nav>
+    <div class = "navBar">
+        <div class = "logoBlock">
+            <img src = "https://picsum.photos/100/50" alt = "logo" class = "logo">
+        </div>
+        <div class = "menuBlock">
+            <ul>
+                <li *ngFor = "let item of menu" class="menu"><a href="#{{item}}"> {{ item }} </a> </li>
+            </ul>
+        </div>
+    </div>
+</nav>
